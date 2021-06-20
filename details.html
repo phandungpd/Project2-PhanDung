@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin chi tiết</title>
+    <link rel="stylesheet" href="./details.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+    <header class="top-title">
+      <a href=""><svg class="logo" xmlns="http://www.w3.org/2000/svg" style="width: 40px;position: relative;top: 10px; " viewBox="0 0 343.62 407.04"><path d="M198.53,39.24l.19,0,.71,0A31.94,31.94,0,0,1,211.12,42C234.4,52,279.19,70.7,311.9,84.35c20.32,8.48,37.87,15.81,40.11,16.83a13.79,13.79,0,0,1,7,11.68V349a14.23,14.23,0,0,1-5.49,10.74c-6,2.88-102.85,44.65-142.24,60.33a34.49,34.49,0,0,1-11.71,2.54h-.42a44.93,44.93,0,0,1-14-3.2c-9.7-3.8-132.33-56-140.48-59.49-1.77-1-5.62-5.77-5.62-10.91V112.86a14.1,14.1,0,0,1,5.93-11c6.31-3.5,62.33-27.32,139.9-59.5a38.33,38.33,0,0,1,13.6-3.1m0-11.85a49.58,49.58,0,0,0-18.17,4C139.45,48.38,44.23,88.1,38.6,91.89a25.88,25.88,0,0,0-11.35,21V349c0,9.74,6.61,18.78,12.41,21.63,0,0,131,55.79,141.22,59.8a55.06,55.06,0,0,0,18.17,4h.49a45.6,45.6,0,0,0,16.12-3.38c39-15.5,138.86-58.53,143.3-60.81,4.18-2.14,11.9-10.14,11.9-21.27V112.86c0-11.39-7.94-19.72-13.95-22.46S254.21,47.65,215.82,31.08A43.62,43.62,0,0,0,199.4,27.4h-.85Z" transform="translate(-27.25 -27.39)"></path><path d="M278.68,314.91c-1.94-5-71.56-169.95-72.57-173A12.07,12.07,0,0,1,208.23,130a12.42,12.42,0,0,1,8-4.53,11.75,11.75,0,0,1,9.3,2.36,12.37,12.37,0,0,1,4.9,8.24c.62,3.88,3.74,5.45,7.38,5a5.86,5.86,0,0,0,3.86-2.18,5.68,5.68,0,0,0,1.08-4.42,23.78,23.78,0,0,0-9.42-16.38,24.27,24.27,0,0,0-18.62-4.95,26.16,26.16,0,0,0-15.38,8.22,25.83,25.83,0,0,0-3.57-3.29,24.27,24.27,0,0,0-18.62-4.95,26.15,26.15,0,0,0-15.39,8.23,25.83,25.83,0,0,0-3.56-3.28,24.27,24.27,0,0,0-18.62-4.95,25.94,25.94,0,0,0-16.59,9.68c-4,5.44-6.77,14-4,22.44,1.63,5,71.78,171.18,72.9,174.24a11.81,11.81,0,0,1-1.87,12.22,12.26,12.26,0,0,1-8.25,4.68,12,12,0,0,1-9.15-2.43,12.32,12.32,0,0,1-5-8.33,6.59,6.59,0,0,0-2.47-3.78,6.68,6.68,0,0,0-4.66-.88,6,6,0,0,0-3.92,2.19,5.32,5.32,0,0,0-1.13,4.05,24.23,24.23,0,0,0,9.67,16.65,23.7,23.7,0,0,0,18.09,4.9,24.46,24.46,0,0,0,15.78-8.3,26.82,26.82,0,0,0,3.7,3.4,23.7,23.7,0,0,0,18.09,4.9,24.46,24.46,0,0,0,15.77-8.29,26.81,26.81,0,0,0,3.71,3.42,23.7,23.7,0,0,0,18.09,4.9A24.45,24.45,0,0,0,275,339.27,25.17,25.17,0,0,0,278.68,314.91Zm-51.17,16.78a12.26,12.26,0,0,1-8.25,4.68,12,12,0,0,1-9.15-2.43,12.32,12.32,0,0,1-5-8.33h0a24.32,24.32,0,0,0-1.61-10.7c-1.94-5-71.56-169.95-72.57-173A12.07,12.07,0,0,1,133.08,130a12.42,12.42,0,0,1,8-4.53,11.75,11.75,0,0,1,9.3,2.36,12.37,12.37,0,0,1,4.9,8.24,7.54,7.54,0,0,0,.17.79,22.75,22.75,0,0,0,1.07,8.37c1.63,5,71.78,171.18,72.9,174.24A11.81,11.81,0,0,1,227.51,331.68Zm37.57,0a12.26,12.26,0,0,1-8.25,4.68,12,12,0,0,1-9.15-2.43,12.32,12.32,0,0,1-5-8.33v0a24.31,24.31,0,0,0-1.6-10.72c-1.94-5-71.56-169.95-72.57-173A12.07,12.07,0,0,1,170.65,130a12.42,12.42,0,0,1,8-4.53,11.75,11.75,0,0,1,9.3,2.36,12.37,12.37,0,0,1,4.9,8.24,7.53,7.53,0,0,0,.18.8,22.75,22.75,0,0,0,1.07,8.39c1.63,5,71.78,171.18,72.9,174.24A11.81,11.81,0,0,1,265.08,331.71Z" transform="translate(-27.25 -27.39)"></path></svg></a>
+
+      <button id="cart"><i class="fa fa-shopping-basket" aria-hidden="true"></i></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                            
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+  <!--content-->
+  <div class="content-details-product">
+    <div class="content-left-product">
+      <img class="img-prd" src="./img/k1.jpg" alt="">
+      <img class="img-prd2" src="./img/k3.jpg" alt="">
+      <img class="img-prd3" src="./img/k10.jpg" alt="">
+      <img class="img-prd4" src="./img/k4.jpg" alt="">
+    </div>
+
+    <div class="content-right-product">
+      <div class="content-product-h3">
+        <h2>LINEN PANTS VER.2</h2>
+      </div>
+      
+      <div class="price">
+        <span>380.000 đ</span>
+      </div>
+      
+      <div class="size-product">
+        <p>Chọn size :
+        </p>
+      </div>
+
+      <div class="selection">
+        <button >0</button>
+        <button >1</button>
+        <button >2</button>
+        <button >3</button>
+      </div>
+      <div class="colors-product">
+        <p>Chọn màu :
+        </p>
+      </div>
+
+      <div class="selection2">
+        <span title=""><img src="./img/h1.png" alt=""></span>
+        <span title=""><img src="./img/h2.png" alt=""></span>
+        <span title=""><img src="./img/h3.png" alt=""></span>
+      </div>
+      <div class="product-lovely">
+        <button type="button" class="btn btn-cart" >Thêm vào giỏ hàng</button>
+        <button type="button" class="icon-product-cart" ><i class="far fa-star"></i></button>
+      </div>
+
+      <div class="guild-left">
+        <p><i class="fas fa-bookmark"></i>Lưu lại</p>
+      </div>
+
+      <div class="guild-right">
+        <p><i class="fas fa-search-location"></i>Tìm cửa hàng</p>
+      </div>
+
+
+      <div class="select-size">
+        <span>Hướng dẫn chọn size<i class="fas fa-chevron-right" id="h1"></i></span>
+      </div>
+    
+      <div class="security">
+        <span>Quy định đổi trả/ hoàn tiền<i class="fas fa-chevron-right" id="h2"></i></span>
+      </div>
+    </div>
+
+    <script src="./test.js"></script>
+    
+</body>
+</html>

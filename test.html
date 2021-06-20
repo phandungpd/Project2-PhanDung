@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện</title>
+    <link rel="stylesheet" href="./test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            
+            
+            <div class="content-nav">
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="./Login.html" target="_blank">Cá Nhân</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                </ul>
+                
+                <form>
+                    <input type="text" name="search" placeholder="" />
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+
+            <div class="img-nav">
+                <a href=""><svg class="logo" xmlns="http://www.w3.org/2000/svg" style="width: 35px;" viewBox="0 0 343.62 407.04"><path d="M198.53,39.24l.19,0,.71,0A31.94,31.94,0,0,1,211.12,42C234.4,52,279.19,70.7,311.9,84.35c20.32,8.48,37.87,15.81,40.11,16.83a13.79,13.79,0,0,1,7,11.68V349a14.23,14.23,0,0,1-5.49,10.74c-6,2.88-102.85,44.65-142.24,60.33a34.49,34.49,0,0,1-11.71,2.54h-.42a44.93,44.93,0,0,1-14-3.2c-9.7-3.8-132.33-56-140.48-59.49-1.77-1-5.62-5.77-5.62-10.91V112.86a14.1,14.1,0,0,1,5.93-11c6.31-3.5,62.33-27.32,139.9-59.5a38.33,38.33,0,0,1,13.6-3.1m0-11.85a49.58,49.58,0,0,0-18.17,4C139.45,48.38,44.23,88.1,38.6,91.89a25.88,25.88,0,0,0-11.35,21V349c0,9.74,6.61,18.78,12.41,21.63,0,0,131,55.79,141.22,59.8a55.06,55.06,0,0,0,18.17,4h.49a45.6,45.6,0,0,0,16.12-3.38c39-15.5,138.86-58.53,143.3-60.81,4.18-2.14,11.9-10.14,11.9-21.27V112.86c0-11.39-7.94-19.72-13.95-22.46S254.21,47.65,215.82,31.08A43.62,43.62,0,0,0,199.4,27.4h-.85Z" transform="translate(-27.25 -27.39)"></path><path d="M278.68,314.91c-1.94-5-71.56-169.95-72.57-173A12.07,12.07,0,0,1,208.23,130a12.42,12.42,0,0,1,8-4.53,11.75,11.75,0,0,1,9.3,2.36,12.37,12.37,0,0,1,4.9,8.24c.62,3.88,3.74,5.45,7.38,5a5.86,5.86,0,0,0,3.86-2.18,5.68,5.68,0,0,0,1.08-4.42,23.78,23.78,0,0,0-9.42-16.38,24.27,24.27,0,0,0-18.62-4.95,26.16,26.16,0,0,0-15.38,8.22,25.83,25.83,0,0,0-3.57-3.29,24.27,24.27,0,0,0-18.62-4.95,26.15,26.15,0,0,0-15.39,8.23,25.83,25.83,0,0,0-3.56-3.28,24.27,24.27,0,0,0-18.62-4.95,25.94,25.94,0,0,0-16.59,9.68c-4,5.44-6.77,14-4,22.44,1.63,5,71.78,171.18,72.9,174.24a11.81,11.81,0,0,1-1.87,12.22,12.26,12.26,0,0,1-8.25,4.68,12,12,0,0,1-9.15-2.43,12.32,12.32,0,0,1-5-8.33,6.59,6.59,0,0,0-2.47-3.78,6.68,6.68,0,0,0-4.66-.88,6,6,0,0,0-3.92,2.19,5.32,5.32,0,0,0-1.13,4.05,24.23,24.23,0,0,0,9.67,16.65,23.7,23.7,0,0,0,18.09,4.9,24.46,24.46,0,0,0,15.78-8.3,26.82,26.82,0,0,0,3.7,3.4,23.7,23.7,0,0,0,18.09,4.9,24.46,24.46,0,0,0,15.77-8.29,26.81,26.81,0,0,0,3.71,3.42,23.7,23.7,0,0,0,18.09,4.9A24.45,24.45,0,0,0,275,339.27,25.17,25.17,0,0,0,278.68,314.91Zm-51.17,16.78a12.26,12.26,0,0,1-8.25,4.68,12,12,0,0,1-9.15-2.43,12.32,12.32,0,0,1-5-8.33h0a24.32,24.32,0,0,0-1.61-10.7c-1.94-5-71.56-169.95-72.57-173A12.07,12.07,0,0,1,133.08,130a12.42,12.42,0,0,1,8-4.53,11.75,11.75,0,0,1,9.3,2.36,12.37,12.37,0,0,1,4.9,8.24,7.54,7.54,0,0,0,.17.79,22.75,22.75,0,0,0,1.07,8.37c1.63,5,71.78,171.18,72.9,174.24A11.81,11.81,0,0,1,227.51,331.68Zm37.57,0a12.26,12.26,0,0,1-8.25,4.68,12,12,0,0,1-9.15-2.43,12.32,12.32,0,0,1-5-8.33v0a24.31,24.31,0,0,0-1.6-10.72c-1.94-5-71.56-169.95-72.57-173A12.07,12.07,0,0,1,170.65,130a12.42,12.42,0,0,1,8-4.53,11.75,11.75,0,0,1,9.3,2.36,12.37,12.37,0,0,1,4.9,8.24,7.53,7.53,0,0,0,.18.8,22.75,22.75,0,0,0,1.07,8.39c1.63,5,71.78,171.18,72.9,174.24A11.81,11.81,0,0,1,265.08,331.71Z" transform="translate(-27.25 -27.39)"></path></svg></a>
+            </div>
+            <!-- The Modal -->
+            
+            <button id="cart"><i class="fa fa-shopping-basket" aria-hidden="true"></i></button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items"> 
+                            
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <a href="./Payment.html" target="_blank"><button type="button" class="btn btn-primary order">Thanh Toán</button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> <!--header-->
+
+
+
+    <!-- content -->
+    <section class="wrapper">
+        <div id="slideshow">
+            <img id="slide" src="./img/1.gif" alt="">
+            <img id="next" onclick = "Next()" src="" alt="" class="btn-next">
+            <img id = "back" onclick = "Back()" src="" alt="" class="btn-back">
+        </div>      
+
+        <div class="image-logo">
+            <div class="image-left">
+                <img src="./img/nam.gif" alt="">
+            </div>
+            <div class="image-right">
+                <img src="./img/nu.gif" alt="">
+            </div>
+        </div>
+
+        <div class="products">
+            <ul>
+                <h1>SẢN PHẨM TỐT NHẤT HÀNG TUẦN</h1>
+                <div class="cate_label">
+                    <button data-cat="35" name="h2" data-type="male" class="cate_label_active">Nam</button>
+                    <button data-cat="39" name="h2" data-type="female" class="cate_label_active2">Nữ</button>
+                </div>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./img/hkt.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">
+                            LINEN PANTS VER.2</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">525.000đ</span> 
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                        <a href="./details.html"><button type="button" class="btn btn-details">Chi Tiết</button></a>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./img/hkt2.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">
+                            LINEN PANTS VER</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1.299.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                        <a href="./details.html"><button type="button" class="btn btn-details">Chi Tiết</button></a>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./img/hkt3.webp"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">
+                            LINEN PANTS VER.2</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">599.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                        <a href="./details.html"><button type="button" class="btn btn-details">Chi Tiết</button></a>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./img/hkt5.jfif"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">
+                            LINEN PANTS VER.2</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">899.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                        <a href="./details.html" target="_blank"><button type="button" class="btn btn-details">Chi Tiết</button></a>
+                    </div>
+                </li>
+
+                <h2>MẶC GÌ TRONG TUẦN NÀY?</h2>
+                <div class="cate_label2">
+                    <button data-cat="35" data-type="male" class="cate_label_active">Nam</button>
+                    <button data-cat="39" data-type="female" class="cate_label_active2">Nữ</button>
+                </div>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./img/hkt6.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">
+                            LINEN PANTS VER.2
+                        </h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">2.199.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                        <a href="./details.html"><button type="button" class="btn btn-details">Chi Tiết</button></a>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./img/hkt7.jfif"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">
+                            LINEN PANTS VER.2</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">115.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                        <a href="./details.html"><button type="button" class="btn btn-details">Chi Tiết</button></a>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./img/S-CAP.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">
+                            S CAP</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">1.295.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                        <a href="./details.html"><button type="button" class="btn btn-details">Chi Tiết</button></a>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="./img/S-CAP-VT.jpg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">
+                            S CAP-VINTAGE</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">853.000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                        <a href="./details.html"><button type="button" class="btn btn-details">Chi Tiết</button></a>
+                    </div>
+                </li>
+                
+
+            </ul>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="homepage_footer" id="footer">
+        <div class="footer_detail">
+          <div class="company_heading">
+            <h1>bản quyền thuộc về phan dũng</h1>
+            
+          </div>
+          <div class="store_addr">
+            <h1>ssstutter hà nội</h1>
+            <ul>
+              <li>70 Tô Hiến Thành, Quận Hai Bà Trưng</li>
+              <li>105-D6, ngõ 4B Đặng Văn Ngữ, Quận Đống Đa</li>
+              <li>167 Cầu Giấy, Quận Cầu Giấy</li>
+            </ul>
+          </div>
+          <div class="policy_menu">
+            <h1>chính sách</h1>
+            <ul>
+              <li>Chính sách bảo mật</li>
+              <li>Chính sách đổi trả</li>
+              <li>Chính sách bảo hành</li>
+            </ul>
+          </div>
+          <div class="company_info">
+            <ul>
+              <li>
+                <svg class="icon-location" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 100 100">
+                  <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="9" y="9" width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAABSCAYAAAAB6RciAAAEfUlEQVR4nN2cXYhVVRTHf/c6mpgXNVGnhkQU07GQogdFgzCLRF9SgiQSJIKEiJCe9El6GqKCHEGJinqIHuslTIUy/GAMybGyqUYj/MiaJklqmD7Gij2tLYfD3I9z1trn7uMf1ouc89/rt8/x7I+171SwVwewErgPWAYsBW4HasDN0toI8BtwAfga+Ao4CvQBYwFyUmsKsAl4D/gd+DdnuHvfF68pMYDNBHYBwwqoejEs3jPbATZVGr8aACwdV6WtqUXBrQUGCwBLx6C0HUyTgJ42gKWjR3Ix1S3A4QjgfByWnEzUBXwREZwPl1OXFvA24GyEcD7OSo65NAPojxjOR7/kmklVYH8J4Hx8KDm3rB0lgvOxo1W4FTIfLBvgmOTeUO4xf1ZCOB+nmr2q20oM52NbPTg317t8AwBeTs5bOxKAW4HOvGNKHf0BfAAcAr4EfpLL5gF3AQ8BG4wn0p3Csi/5jxXjCfQo8AIwq4WEZsm1o4btDwrTda0yND8NLM7R84vlXqs8ViXN9xqZfgRMzwHnNV08LHLZmzS+aPTkago4r5rRk7zoDe8wMHMfk24DOK9u8dTmtcQNimsMEtoNDNiwjWtAPLUaZ+tV9tKfwFxDOK+54q3Jrbcq+5YaHQCGAgAOibdGSx3gQgPAUNJ6L3SAs5Um/QEBtd6zqwaf9kvK+0N616pZV8IT6B/l/SG9q1o4EgWVEFJ7O8ArSo8lwfD03sMO8AelyWrl/SG9LzjA75Qmm9JLEyNVxFujcw7wc6WJG0fXBQBcZzBGu/0lHjGY1J4yLohMEk9tXg86szkGRi52GgLuNMjnL2CaN7QorlwDNhrAbRQvbT4fJ02t6n6u17Yo4LaIh0Uu25PGq41MfbyRsX7nrn3TOIdFyQaqcqTDsgFXW38JWN4AbLlcY13r7/MNJMcv19DzGXo9i9x+6JnEutEtZu+U/dEQehbYk/ZdZtyL7YqR5NGT5GTbnTY6EqhHi9S7wK/12nv8BniC9zbqzJsCnVoqKk6kgdLrQbeL9VoJXsN6eqWVi+YYF0KKim8n2p2YaEX/M/B6qC4OqJ4sWxzzDadMRcT5PMcv3yoR4DN5XowFJXmK5zSHZ3eXAPCJvHDInFFzRDl0nG62r9tsm2FEBv/7Nb0UUE8B32jta5EeLzlo2W9bI4Mbk+WWmSoyz4sFsNcSzmtFJHBXLI8zpxXD4P90KDhkIv5LG+H6DMp9TfVkm+Dch+Xu0HDIB+eTNgC+XAScV7fBEY8scT5vqT1vwcRvazyQ8/6s2iybYoWqw6gC1CzeLhosKfef/u+AcD8aHHNRa1dAwEfbDec0GTgZAO6dCNiuy+r4o49LMbyaaT1nCLghLrT/VZE1mhZuXyuNtUudUirLCzeQrKvHqodzwrmZ0T2xw3m9mANwe2vWccgNHZ9mgDsQ6LRUUC1qsfbuaiG3lg3O67EWANfHkWp+vdoArqesUEm5usHxCeCOpn79Vmp1pcbHIc3Pw2PVGtlXuSa/GyxE5n8TooG+l6/qMdl+DC/gP70P2BcDt2ZTAAAAAElFTkSuQmCC"></image>
+                </svg>
+                <p>160 Tôn Đức Thắng, Quận Đống Đa, Hà Nội</p>
+              </li>
+              <li>
+                <svg class="icon-phone" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 100 100">
+                  <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="7" y="7" width="30" height="30" xlink:href="data:img/png;base64,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"></image>
+                </svg>
+                <p>086 993 6266</p>
+              </li>
+              <li>
+                <svg class="icon-web" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 100 100">
+                  <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="8" y="8" width="30" height="30" xlink:href="data:img/png;base64,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"></image>
+                </svg>
+                <p>ssstutter.com</p>
+              </li>
+              <li>
+                <svg class="icon-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 100 100">
+                  <image id="Vector_Smart_Object" data-name="Vector Smart Object" x="9" y="20" width="30" height="30" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAA9CAYAAAA+jj4UAAAD20lEQVR4nO2cTUhUURTHf47RF5KLwoo+DIKoKAJdSZvoCxdBkZuKdkFgQa0KjFy4kHJlIbSpTREUQrnpA9dJHxsjwoVkki2UbGFFicnYxLUzcb3eN7x5c2feG71/OJuZe+855zdv7n333HmDoV3ALeATkAYy3uZYWtjcElZWXQFmPLjQNiPM5uiyBxPZLimQFUJzBNgcdKl65dRnoDYlLV55VpH1Uu+4Euj2X9O8rVvYzZH6mrd7OKGtXZsarToN/PagAu23MAqlvcC4hzbPxoVNoGqASuPNLcCAh/ffBoSJriXCblad0lgt4/VGw2rguYc4y6DaYFMvzNT7N9QLf7QOk0CT0UFdqV2LGGKX5dvaJKyybRRDa+cWyxxwbpFtIWckZ1MtAe0DB7oHLDUGOQx8XwQQv0uuuhSLuzn65BzwBbDGGHAHMLyAIQ5LjrrWCItc/Yo2cDla0IXzMUQuoRL+FnCp31tAEG1T2SHJPUz/0I5UUbM5j8m3nMy2uDbnWdzOO+GbltuB48btQLnYpMSuq1JyzDeHSEk/A1YZAagb1NEygjhq2YConJ5GHC9yIO8tW6YNQH8ZQOyXWHXVSk5RxywooC9AgxGQqs/1JBhij6WG2CC5FDJuwYFNAaeMwFSdriOBEDssNcSTkkOhYzsLss0S5BlgOgEApyUW88Nuc+jDacAPgRVGwPuBiRghTkgMupYDDxz7cR74a2CdEfh2YCgGiEPiW9daidG1r6IkMGL5JUKpt5V9lu3ebomtGP6KlsgPoNFIRG3B7pcA4n3Ldq9RYiqWz6ImZKvpqUm+tYg+Wy2L3vkS1FKLfnVkpBRvbitPOLrtyNqU3MroirrdSyxIZU+AKiNRdSL31cHYXy2ne1Xis1T5lcyRsrfARiPhrcBgAWMOyhi6NomvUuZWUmcZKRbUGYmvjrii90lfXXUxFU9K7lDZL+CoAWCZ3NCHHeOh9NF1TMaOI6dYnGZkFb1gWdGvheh73bIyX4z5lDM2x1nrtKzoZwOq02l5L66VOdEglT22lLYOAmNamzF5TVeSSnaJCELZG/13NNq8uU/MnA9rpE9S4k9MIJmAo1+bkni2nqhglP2ULZ25V0ZeOy9tEhV3RZZmAjUmO5MPEuM24AiwPonBJhlkWSm1gHKJVR6kI3mQjuRBOpIH6UgepCN5kI7kQTqSB+lIHqQjeZCO5EE6UsoXLZwok5KjS6/CNKpA9nqIBau3Qn5+987Pl5GlnozdUylPxatjzgNlmkjcugo8ysZQIU8/+b/xCm9pYWb9g5CdwG15Mt7/vdd8U0wUmzvC6p+Av7jCWzIPL1DlAAAAAElFTkSuQmCC"></image>
+                </svg>
+                <p>info@ssstutter.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="store_addr">
+            <h1>ssstutter sài gòn</h1>
+            <ul>
+              <li>Lầu 1, số 42/8 Tôn Thất Thiệp, Quận 1</li>
+              <li>Lầu 1, 25 Nguyễn Trãi, Phường Bến Thành, Quận 1</li>
+              <li>152 Nguyễn Gia Trí, Quận Bình Thạnh</li>
+            </ul>
+          </div>
+        </div>
+        <div class="end_footer">
+          <h1>Copyright ⓒ Bản quyền thuộc về Phan Dũng</h1>
+          <div class="mobile_app">
+           
+            
+          </div>
+        </div>
+    </footer>
+
+    <script src="./test.js"></script>
+
+
+
+</body>
+</html>
